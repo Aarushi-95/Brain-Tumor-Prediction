@@ -1,5 +1,5 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow logs
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # This disables GPU usage in TensorFlow
 
 
 from flask import Flask,request, jsonify
