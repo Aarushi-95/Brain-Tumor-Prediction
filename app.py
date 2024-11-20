@@ -53,4 +53,5 @@ def predict():
     return jsonify({'prediction': ans})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    print("Starting Python Flask Server For Home Price Prediction...")
+    app.run(host="0.0.0.0", port=5000)  
